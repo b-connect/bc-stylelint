@@ -1,6 +1,6 @@
 {
-  "name": "bc-stylelint",
-  "version": "1.0.0",
+  "name": "stylelint-config-bc-default",
+  "version": "1.0.1",
   "description": "Default configuration for stylelint.",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/b-connect/bc-stylelint#readme",
   "dependencies": {
-    "stylelint-config-recommended": "^1.0.0"
+    "stylelint-config-recommended": "^1.0.0",
+    "stylelint-scss": "^2.1.0"
   }
 }
