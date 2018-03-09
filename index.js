@@ -7,12 +7,37 @@ module.exports = {
   "extends": "stylelint-config-recommended",
   "rules": {
     "at-rule-empty-line-before": [ "always", {
-      except: [
+      "except": [
         "blockless-after-same-name-blockless",
-        "first-nested",
+        "first-nested"
       ],
-      ignore: ["after-comment"],
+      "ignore": ["after-comment"]
     } ],
+    "unit-no-unknown": true,
+    "property-no-unknown": true,
+    "color-no-invalid-hex": true,
+    "font-family-no-duplicate-names": true,
+    "font-family-no-missing-generic-family-keyword": true,
+    "function-calc-no-unspaced-operator": true,
+    "block-no-empty": true,
+    "selector-type-no-unknown": true,
+    "no-duplicate-at-import-rules": true,
+    "no-duplicate-selectors": true,
+    "no-empty-source": true,
+    "no-extra-semicolons": true,
+    "comment-no-empty": true,
+    "no-invalid-double-slash-comments": null,
+    "color-no-hex": null,
+    "value-no-vendor-prefix": true,
+    "property-no-vendor-prefix": true,
+    "selector-no-vendor-prefix": true,
+    "at-rule-blacklist": ["extend"],
+    "at-rule-no-vendor-prefix": true,
+    "font-family-name-quotes": "always-unless-keyword",
+    "font-weight-notation": "numeric",
+    "string-quotes": "single",
+    "selector-class-pattern": "^[a-z][-a-z0-9]*$",
+    "selector-id-pattern": "^[a-z][-a-z0-9]*$",
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always-single-line",
     "at-rule-semicolon-newline-after": "always",
@@ -26,19 +51,19 @@ module.exports = {
     "color-hex-case": "lower",
     "color-hex-length": "short",
     "comment-empty-line-before": [ "always", {
-      except: ["first-nested"],
-      ignore: ["stylelint-commands"],
+      "except": ["first-nested"],
+      "ignore": ["stylelint-commands"]
     } ],
     "comment-whitespace-inside": "always",
     "custom-property-empty-line-before": [ "always", {
-      except: [
+      "except": [
         "after-custom-property",
-        "first-nested",
+        "first-nested"
       ],
-      ignore: [
+      "ignore": [
         "after-comment",
-        "inside-single-line-block",
-      ],
+        "inside-single-line-block"
+      ]
     } ],
     "declaration-bang-space-after": "never",
     "declaration-bang-space-before": "always",
@@ -51,14 +76,14 @@ module.exports = {
     "declaration-colon-space-after": "always-single-line",
     "declaration-colon-space-before": "never",
     "declaration-empty-line-before": [ "always", {
-      except: [
+      "except": [
         "after-declaration",
-        "first-nested",
+        "first-nested"
       ],
-      ignore: [
+      "ignore": [
         "after-comment",
-        "inside-single-line-block",
-      ],
+        "inside-single-line-block"
+      ]
     } ],
     "function-comma-newline-after": "always-multi-line",
     "function-comma-space-after": "always-single-line",
@@ -86,8 +111,8 @@ module.exports = {
     "number-no-trailing-zeros": true,
     "property-case": "lower",
     "rule-empty-line-before": [ "always-multi-line", {
-      except: ["first-nested"],
-      ignore: ["after-comment"],
+      "except": ["first-nested"],
+      "ignore": ["after-comment"]
     } ],
     "selector-attribute-brackets-space-inside": "never",
     "selector-attribute-operator-space-after": "never",
@@ -107,6 +132,6 @@ module.exports = {
     "value-list-comma-newline-after": "always-multi-line",
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
-    "value-list-max-empty-lines": 0,
-  },
+    "value-list-max-empty-lines": 0
+  }
 }
