@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/b-connect/bc-stylelint#readme",
   "dependencies": {
-    "stylelint-config-recommended": "^1.0.0",
-    "stylelint-scss": "^2.1.0"
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-scss": "^2.5.0"
   }
 }
